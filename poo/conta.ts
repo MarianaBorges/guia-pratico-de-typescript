@@ -1,5 +1,12 @@
+function analisaSaldo(target: any, key: any, descriptor: any){
+
+}
+
+function validaTitular(target: any, propertyKey: any,){}
+
 export abstract class Conta {
     private readonly _numeroDaConta: number;
+    @validaTitular
     titular: string;
     private _saldo: number;
 
@@ -8,7 +15,7 @@ export abstract class Conta {
         this.titular = titular;
         this._saldo = saldo;
     }
-
+    @analisaSaldo
     protected consultaSaldo(): number{
         return this._saldo;
     }
